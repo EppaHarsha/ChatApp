@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './Chat.css';
 
-const socket = io('http://localhost:9000');
+const socket = io('https://chatapp-qbly.onrender.com');
 
 function Chat({userName,roomId}) {
   const [message, setMessage] = useState('');
